@@ -7,8 +7,8 @@
  */
 public class CardGame {
     public static void main(String[] args){
-        //
-        System.out.println("The card that has been picked is ");
+        //Print the first part of the statement to the console
+        System.out.print("The card that has been picked is ");
         
         //Generate a random number between 1 - 52
         int card = 1 + (int)(Math.random() * 52);
@@ -44,26 +44,20 @@ public class CardGame {
             System.out.print("Queen");
         else if (card == 13 || card == 26 || card == 39 || card == 52)
             System.out.print("King");
-        else
-            System.out.println(" Cordell you made a mistake in the if else mess");
-            
 
         //Pick the suit of the card, and display to console
         switch (card % 4) {
             case 0 :
-                System.out.print(" of Clubs.");
+                System.out.println(" of Clubs.");
                 break;
             case 1 :
-                System.out.print(" of Diamonds.");
+                System.out.println(" of Diamonds.");
                 break;
             case 2 :
-                System.out.print(" of Hearts.");
+                System.out.println(" of Hearts.");
                 break;
             case 3 :
-                System.out.print(" of Spades.");
-                break;
-            default :
-                System.out.println(" you made a mistake in the second switch statement.");
+                System.out.println(" of Spades.");
                 break;
         }
     }
