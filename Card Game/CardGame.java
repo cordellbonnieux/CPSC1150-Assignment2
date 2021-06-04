@@ -11,59 +11,45 @@ public class CardGame {
         System.out.println("The card that has been picked is ");
         
         //Generate a random number between 1 - 52
-        int random = 1 + (int)(Math.random() * 52);
+        int card = 1 + (int)(Math.random() * 52);
 
         //Get rid of potential zeros
-        if (random == 0)
-            random++;
+        if (card == 0)
+            card++;
         
-        Switch (random) {
-            case (1 || 14 || 27 || 40) :
-                System.out.print("Ace");
-                break;
-            case (2 || 15 || 28 || 41) :
-                System.out.print("2");
-                break;
-            case (3 || 16 || 29 || 42) :
-                System.out.print("3");
-                break;
-            case (4 || 17 || 30 || 43) :
-                System.out.print("4");
-                break;
-            case (5 || 18 || 31 || 44) :
-                System.out.print("5");
-                break;
-            case (6 || 19 || 32 || 45) :
-                System.out.print("6");
-                break;
-            case (7 || 20 || 33 || 46) :
-                System.out.print("7");
-                break;
-            case (8 || 21 || 34 || 47) :
-                System.out.print("8");
-                break;
-            case (9 || 22 || 35 || 48) :
-                System.out.print("9");
-                break;
-            case (10 || 23 || 36 || 49) :
-                System.out.print("10");
-                break;
-            case (11 || 24 || 37 || 50) :
-                System.out.print("Jack");
-                break;
-            case (12 || 25 || 38 || 51) :
-                System.out.print("Queen");
-                break;
-            case (13 || 26 || 39 || 52) :
-                System.out.print("King");
-                break;
-            default :
-                System.out.println(" Cordell you made a mistake in the first switch!");
-                break;
-        }
-        
+        //Decide what card number is represented by the random integer
+        if (card == 1 || card == 14 || card == 27 || card == 40)
+            System.out.print("Ace");
+        else if (card == 2 || card == 15 || card == 28 || card == 41)
+            System.out.print("2");  
+        else if (card == 3 || card == 16 || card == 29 || card == 42)
+            System.out.print("3");
+        else if (card == 4 || card == 17 || card == 30 || card == 43)
+            System.out.print("4");
+        else if (card == 5 || card == 18 || card == 31 || card == 44)
+            System.out.print("5");
+        else if (card == 6 || card == 19 || card == 32 || card == 45)
+            System.out.print("6");
+        else if (card == 7 || card == 20 || card == 33 || card == 46)
+            System.out.print("7");
+        else if  (card == 8 || card == 21 || card == 34 || card == 47)
+            System.out.print("8");
+        else if (card == 9 || card == 22 || card == 35 || card == 48)
+            System.out.print("9");
+        else if (card == 10 || card == 23 || card == 36 || card == 49)
+            System.out.print("10");
+        else if (card == 11 || card == 24 || card == 37 || card == 50)
+            System.out.print("Jack");
+        else if (card == 12 || card == 25 || card == 38 || card == 51)
+            System.out.print("Queen");
+        else if (card == 13 || card == 26 || card == 39 || card == 52)
+            System.out.print("King");
+        else
+            System.out.println(" Cordell you made a mistake in the if else mess");
+            
+
         //Pick the suit of the card, and display to console
-        switch (random % 4) {
+        switch (card % 4) {
             case 0 :
                 System.out.print(" of Clubs.");
                 break;
