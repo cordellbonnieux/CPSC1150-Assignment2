@@ -1,7 +1,7 @@
 /**
  * Task: CPSC 1150 - Assignment 2
  * Program: Card Game
- * Description: Generates a number between 1 and 52, then using that number...
+ * Description: Generates a random number from 1-52, then chooses which card (from a deck of cards) that number represents; prints to the console.
  * Author: Cordell Bonnieux
  * Date: June 4th 2021
  */
