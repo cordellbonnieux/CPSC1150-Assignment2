@@ -21,12 +21,23 @@ public class GuessingGame {
         //Read user input
         int guess = input.nextInt();
 
-        //Check to see if the guess is valid
-        if (guess > 10 || guess < 1)
-            System.out.print("Well if you're not going to \"try\" I'm not playing.");
+        //Check to see if input is valid
+        if (guess > 10 || guess < 1) {
+
+            //If the input is invalid, bid the user farewell
+            System.out.println("Well if you're not going to \"try\" I'm not playing.");
+            System.exit(0);
+
+        }
         
         //Check to see if the input matches the random number
         if (guess == num)
-            System.out.print
+
+            //If it matches, the user wins
+            System.out.print("Horay you win!");
+
+        else {
+
+        }
     }
 }
