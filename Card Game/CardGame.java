@@ -17,7 +17,7 @@ public class CardGame {
         if (random == 0)
             random++;
         
-        Switch (random)
+        Switch (random) {
             case (1 || 14 || 27 || 40) :
                 System.out.print("Ace");
                 break;
@@ -34,48 +34,51 @@ public class CardGame {
                 System.out.print("5");
                 break;
             case (6 || 19 || 32 || 45) :
-                System.out.print('6');
+                System.out.print("6");
                 break;
             case (7 || 20 || 33 || 46) :
-                System.out.print('7');
+                System.out.print("7");
                 break;
             case (8 || 21 || 34 || 47) :
-                System.out.print('8');
+                System.out.print("8");
                 break;
             case (9 || 22 || 35 || 48) :
-                System.out.print('9');
+                System.out.print("9");
                 break;
             case (10 || 23 || 36 || 49) :
-                System.out.print('10');
+                System.out.print("10");
                 break;
             case (11 || 24 || 37 || 50) :
-                System.out.print('Jack');
+                System.out.print("Jack");
                 break;
             case (12 || 25 || 38 || 51) :
-                System.out.print('Queen');
+                System.out.print("Queen");
                 break;
             case (13 || 26 || 39 || 52) :
-                System.out.print('King');
+                System.out.print("King");
                 break;
             default :
-                System.out.println('Cordell you made a mistake!');
+                System.out.println(" Cordell you made a mistake in the first switch!");
                 break;
+        }
+        
+        //Pick the suit of the card, and display to console
+        switch (random % 4) {
+            case 0 :
+                System.out.print(" of Clubs.");
+                break;
+            case 1 :
+                System.out.print(" of Diamonds.");
+                break;
+            case 2 :
+                System.out.print(" of Hearts.");
+                break;
+            case 3 :
+                System.out.print(" of Spades.");
+                break;
+            default :
+                System.out.println(" you made a mistake in the second switch statement.");
+                break;
+        }
     }
-    //Pick the suit of the card, and display to console
-    switch (random % 4)
-        case 0 :
-            System.out.print(" of Clubs.");
-            break;
-        case 1 :
-            System.out.print(" of Diamonds.");
-            break;
-        case 2 :
-            System.out.print(" of Hearts.");
-            break;
-        case 3 :
-            System.out.print(" of Spades.");
-            break;
-        default :
-            System.out.println(" you made a mistake in the second switch statement.");
-            break;
 }
