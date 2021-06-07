@@ -8,7 +8,7 @@
 import java.util.Scanner;
 public class GuessingGame {
     public static void main(String[] args){
-        
+    
         //Create Scanner object
         Scanner input = new Scanner(System.in);
 
